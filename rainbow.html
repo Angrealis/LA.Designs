@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function rainbowify(){
+       //    let divs = document.getElementsByTagName("div");
+      /*     let color = document.getElementById("red").style.backgroundColor;
+            console.log(color)
+               if(divs[1].style.backgroundColor == "white")
+               {
+
+                    for(let i = 0; i < divs.length; i++)
+                    divs[i].style.backgroundColor = divs[i].id
+                    console.log("Shits kinda working");
+                } else {
+                    for(let i = 0; i < divs.length; i++) 
+                    divs[i].style.backgroundColor = "white"
+                    console.log("Shits not working");
+
+                    }
+      }
+                    */
+           let divs = document.getElementsByTagName("div");
+               if (divs[1].style.backgroundColor == "orange")
+               {
+
+                    for(let i = 0; i < divs.length; i++) 
+                    divs[i].style.backgroundColor = "white"
+                    console.log("Shits not working");
+
+                } else if (divs[1].style.backgroundColor == "white"){
+                    for(let i = 0; i < divs.length; i++)
+                    divs[i].style.backgroundColor = divs[i].id
+                    console.log("Shits kinda working");
+
+                } else {
+
+                    for(let i = 0; i < divs.length; i++)
+                    divs[i].style.backgroundColor = divs[i].id
+                    console.log("Shits kinda working");
+                    }
+      }
+
+
+
+
+
+    </script>
+    <style>
+      div {
+        height: 30px;
+        width: 30px;
+        background-color:white;
+      }
+    </style>
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="indigo"></div>
+    <div id="violet"></div>
+    <button onclick="rainbowify()">Make me a rainbow</button>
+  </body>
+</html>
+
+    
