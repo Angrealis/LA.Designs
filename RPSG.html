@@ -5,23 +5,65 @@
 </title>
 <body>
 <script>
-let playerChoice = prompt("Press the appropriate number for your choice, 1)Rock, 2)Paper, 3)Scissors");//take a number from the prompt 
-let computerChoice = Math.floor(Math.random()*3);
-let winner = "Draw"
+    function rpsg(value){
+                   let playerChoice = value
+                   //let playerChoice = 4
+                  //      while (playerChoice > 3 || playerChoice == 0) 
+                    //        {
+                   //         playerChoice = prompt("Press the appropriate number for your choice, 1)Rock, 2)Paper, 3)Scissors");//take a number from the prompt 
+                    //        }
 
-//Rock beats scissors 3
-if (playerChoice == 1 && computerChoice == 3) {
-winner = "Player";
-}
-//Paper beats rock 1
-else if (playerChoice == 2 && computerChoice == 1){
 
-}
-//Scissors beat Paper 2
-else if (playerChoice == 3 && computerChoice == 2){
+                   let computerChoice = Math.floor((Math.random()*3)+1);
+                //   let computerChoice = 1 
+                   let winner = "It's a Draw";
+                    let playerNameChoice = "Rock";
+                    let computerNameChoice = "Rock";
+                            
 
-}
-//else output both choose same
+
+
+                        if (playerChoice == 2) 
+                            {
+                                playerNameChoice = "Paper";
+                            } 
+
+                        else if (playerChoice == 3)
+                            {
+                                playerNameChoice = "Scissors";
+                            }
+
+                        if (computerChoice == 2)
+                            {
+                                computerNameChoice = "Paper";
+                            }
+                            
+                        else if (computerChoice == 3)
+                            {
+                                computerNameChoice = "Scissors";
+                            }
+
+
+
+                        //Rock beats scissors 3
+                        if (playerChoice == 1 && computerChoice == 3 ||playerChoice == 2 && computerChoice == 1||playerChoice == 3 && computerChoice == 2) 
+                            {
+                                winner = "You are the winner, you picked "+ playerNameChoice + " and the computer picked " + computerNameChoice;
+                                alert(winner);
+                            }
+                        
+                        else if (playerChoice == computerChoice) 
+                            {
+                                winner = "It's a draw, you picked "+ playerNameChoice + " and the computer picked " + computerNameChoice;
+                                alert(winner);
+                            }
+
+                        else 
+                            {
+                                winner = "You lost the computer won, You picked " + playerNameChoice + " and the computer picked " + computerNameChoice;
+                                alert(winner);
+                            }
+                    }
 
 
 let val = 100;
@@ -31,9 +73,11 @@ let check = (val % 2) ? `Odd` : `Even`;
 check = `${val} is ${check}`;
 console.log(check);
 </script>
+<button onclick= "rpsg(playerChoice = 1)">Choose Rock</button>
 
-
-
+<button onclick= "rpsg(value)" type="submit" value= 1>Choose Rock </button>
+<button onclick= "rpsg(value)" type="submit" value= 2>Choose Paper</button>
+<button onclick= "rpsg(value)" type="submit" value= 3>Choose Scissors</button>
 
 </body>
 
