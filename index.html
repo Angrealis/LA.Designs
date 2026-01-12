@@ -22,7 +22,30 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
           .button1 {background-color: #04AA6D;} /* Green */
           .button2 {background-color: #008CBA;} /* Blue */
           .button3 {background-color: #f44336;} /* Red */ 
@@ -102,7 +125,7 @@
     <tbody>
     </tr>
     <tr> <!-- Table Row number 1 -->
-       <td><button class="button button1" onclick="rainbowify()">Make Me A Rainbow</button></td>  <!-- cell 1 -->
+       <td><button class="button button1" onclick="rainbowify()"><span>Hover </span>Make Me A Rainbow</button></td>  <!-- cell 1 -->
        <td><a href="https://angrealis.github.io/LA.Designs/RPSG.html"><button>Click to Play Rock Paper Scissors</button></a></td><!-- cell 2-->
       <td>Cell#3</td>
       
@@ -147,13 +170,14 @@
     
 <h2>Animated Buttons - "Pressed Effect"</h2>
 
-<button class="button button1">Click Me</button>
+<button class="button button1"><span>Hover </span>Click Me</button>
     
   </body>
 </html>
 
 
     
+
 
 
 
