@@ -1,182 +1,200 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-            .button {
-              border: none;
-              color: white;
-              padding: 15px 32px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              margin: 4px 2px;
-              cursor: pointer;
-          border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-.button:hover {background-color: #7F00FF}
+        <style>
+            .button 
+                  {
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 15px;
+                    box-shadow: 0 9px #999;
+                  }
+            .button:hover 
+                  {background-color: #7F00FF}
+            
+            .button:active 
+                  {
+                    background-color: #7F00FF;
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
+                  }
+            .button span 
+                  {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                  }
+            
+            .button span:after 
+                  {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                  }
+            
+            .button:hover span 
+                {
+                  padding-right: 25px;
+                }
+            
+            .button:hover span:after 
+                {
+                  opacity: 1;
+                  right: 0;
+                }
+            .button1 
+                {background-color: #04AA6D;} /* Green */
+        
+            .button2 
+                {background-color: #008CBA;} /* Blue */
+        
+            .button3 
+                {background-color: #f44336;} /* Red */ 
+        
+            .button4 
+                {background-color: #e7e7e7; color: black;} /* Gray */ 
+        
+            .button5 
+                {background-color: #555555;} /* Black */
 
-.button:active {
-  background-color: #7F00FF;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+            div 
+             {
+              height: 30px;
+              width: 30px;
+              background-color:white;
+             }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-          .button1 {background-color: #04AA6D;} /* Green */
-          .button2 {background-color: #008CBA;} /* Blue */
-          .button3 {background-color: #f44336;} /* Red */ 
-          .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
-          .button5 {background-color: #555555;} /* Black */
-    </style>
-  </head>
-  <body>
-    <script>
-      function rainbowify(){
-       //    let divs = document.getElementsByTagName("div");
-      /*     let color = document.getElementById("red").style.backgroundColor;
-            console.log(color)
-               if(divs[1].style.backgroundColor == "white")
-               {
-
-                    for(let i = 0; i < divs.length; i++)
-                    divs[i].style.backgroundColor = divs[i].id
-                    console.log("Shits kinda working");
-                } else {
-                    for(let i = 0; i < divs.length; i++) 
-                    divs[i].style.backgroundColor = "white"
-                    console.log("Shits not working");
-
-                    }
-      }
-                    */
-           let divs = document.getElementsByTagName("div");
-               if (divs[1].style.backgroundColor == "orange")
-               {
-
-                    for(let i = 0; i < divs.length; i++) 
-                    divs[i].style.backgroundColor = "white"
-                    console.log("Shits not working");
-
-                } else if (divs[1].style.backgroundColor == "white"){
-                    for(let i = 0; i < divs.length; i++)
-                    divs[i].style.backgroundColor = divs[i].id
-                    console.log("Shits kinda working");
-
-                } else {
-
-                    for(let i = 0; i < divs.length; i++)
-                    divs[i].style.backgroundColor = divs[i].id
-                    console.log("Shits kinda working");
-                    }
-      }
-
-
-
-
-
-    </script>
-    <style>
-      div {
-        height: 30px;
-        width: 30px;
-        background-color:white;
-      }
-    </style>
-    <div id="red"></div>
-    <div id="orange"></div>
-    <div id="yellow"></div>
-    <div id="green"></div>
-    <div id="blue"></div>
-    <div id="indigo"></div>
-    <div id="violet"></div>
-    <a href="https://angrealis.github.io/LA.Designs/RPSG.html">Click for RPSG through standard link</a>
-    <div id="test"></div> 
-<table border="1" width ="50%">
-    <thead>
-    <tr>
-        <th>Column 1</th> <!--Table Header(TH)-->
-        <th>Column 2</th>
-        <th>Column 3</th>
-    </thead>
-    <tbody>
-    </tr>
-    <tr> <!-- Table Row number 1 -->
-       <td><button class="button button1" onclick="rainbowify()"><span></span>Make Me A Rainbow</button></td>  <!-- cell 1 -->
-       <td><a href="https://angrealis.github.io/LA.Designs/RPSG.html"><button>Click to Play Rock Paper Scissors</button></a></td><!-- cell 2-->
-      <td>Cell#3</td>
       
-    </tr>
-    <tr><!-- Table Row number 2 -->
-        <!--<td colspan = "2">Cell#4</td> cell 1 within row 1 colspan merges two rows-->
-        <td>Cell#4</td>
-        <td>Cell#5</td>
-        <td>Cell#6</td>
-    </tr>
-    <tr><!-- Table Row number 3 -->
-        <!--<td rowspan="2">Cell#7</td>-->
-        <td>Cell#7</td>
-        <td>Cell#8</td>
-        <td>Cell#9</td>
-    </tr>    
-        <tr><!-- Table Row number 2 -->
-        <td>Cell#4</td>
-        <td>Cell#5</td>
-        <td>Cell#6</td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-        <th>Footer 1</th> <!--Table Header(TH)-->
-        <th>Footer 2</th>
-        <th>Footer 3</th>
-    </tr>
-    </tfoot>
-</table>
-
-    <h2>Button Colors</h2>
-
-<p>Set the background color of a button with the background-color property, and set the text color with the color property:</p>
-
-<button class="button button1">Green</button>
-<button class="button button2">Blue</button>
-<button class="button button3">Red</button>
-<button class="button button4">Gray</button>
-<button class="button button5">Black</button>
-
-    
-<h2>Animated Buttons - "Pressed Effect"</h2>
-
-<button class="button button1"><span></span>Click Me</button>
-    
-  </body>
+        
+      </style>
+  </head>
+<!--*****************************************End of Head*************************************************************-->
+  
+      <body>
+          <script>
+            function rainbowify()
+              {
+              
+                 let divs = document.getElementsByTagName("div");
+                     if (divs[1].style.backgroundColor == "orange")
+                         {
+                          for(let i = 0; i < divs.length; i++) 
+                          divs[i].style.backgroundColor = "white"
+                          console.log("Shits not working");
+                        } 
+                       
+                     else if (divs[1].style.backgroundColor == "white")
+                         {
+                          for(let i = 0; i < divs.length; i++)
+                          divs[i].style.backgroundColor = divs[i].id
+                          console.log("Shits kinda working");
+                        }
+                       
+                     else 
+                       {
+                         for(let i = 0; i < divs.length; i++)
+                        divs[i].style.backgroundColor = divs[i].id
+                        console.log("Shits kinda working");
+                      }     
+              }
+      
+      
+      
+      
+          </script>
+      
+          <div id="red"></div>
+          <div id="orange"></div>
+          <div id="yellow"></div>
+          <div id="green"></div>
+          <div id="blue"></div>
+          <div id="indigo"></div>
+          <div id="violet"></div>
+          <a href="https://angrealis.github.io/LA.Designs/RPSG.html">Click for RPSG through standard link</a>
+          <div id="test"></div> 
+      
+          
+      <table border="1" width ="50%">
+          <thead>
+            <tr>
+                <th>Column 1</th> <!--Table Header(TH)-->
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <tr> <!-- Table Row number 1 -->
+               <td><button class="button button1" onclick="rainbowify()"><span></span>Make Me A Rainbow</button></td>  <!-- cell 1 -->
+               <td><a href="https://angrealis.github.io/LA.Designs/RPSG.html"><button>Click to Play Rock Paper Scissors</button></a></td><!-- cell 2-->
+               <td>Cell#3</td>  
+            </tr>
+            
+            <tr><!-- Table Row number 2 -->
+                <!--<td colspan = "2">Cell#4</td> cell 1 within row 1 colspan merges two rows-->
+                <td>Cell#4</td>
+                <td>Cell#5</td>
+                <td>Cell#6</td>
+            </tr>
+            
+            <tr><!-- Table Row number 3 -->
+                <!--<td rowspan="2">Cell#7</td>-->
+                <td>Cell#7</td>
+                <td>Cell#8</td>
+                <td>Cell#9</td>
+            </tr>    
+            
+            <tr><!-- Table Row number 2 -->
+              <td>Cell#4</td>
+              <td>Cell#5</td>
+              <td>Cell#6</td>
+            </tr>
+         </tbody>
+        
+         <tfoot>
+            <tr>
+                <th>Footer 1</th> <!--Table Header(TH)-->
+                <th>Footer 2</th>
+                <th>Footer 3</th>
+            </tr>
+        </tfoot>
+        
+      </table>
+      
+          
+      <h2>Button Colors</h2>
+      
+        <p>Set the background color of a button with the background-color property, and set the text color with the color property:</p>
+        
+        <button class="button button1">Green</button>
+        <button class="button button2">Blue</button>
+        <button class="button button3">Red</button>
+        <button class="button button4">Gray</button>
+        <button class="button button5">Black</button>
+        
+            
+      <h2>Animated Buttons - "Pressed Effect"</h2>
+      
+        <button class="button button1"><span></span>Click Me</button>
+          
+      </body>
+  
 </html>
 
 
     
+
 
 
 
