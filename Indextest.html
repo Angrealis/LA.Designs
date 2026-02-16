@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <h1>fuk </h1>
+<script>
+
+</script>    
+<style>
+
+
+
+ .button 
+                  {
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 15px;
+                    box-shadow: 0 9px #999;
+                  }
+            .button:hover 
+                  {background-color: #0099ff}
+            
+            .button:active 
+                  {
+                    background-color: #0099ff;
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
+                  }
+            .button span 
+                  {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative; 
+                    transition: 0.5s;
+                  }
+            
+            .button span:after 
+                  {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                  }
+            
+            .button:hover span 
+                {
+                  padding-right: 25px;
+                }
+            
+            .button:hover span:after 
+                {
+                  opacity: 1;
+                  right: 0;
+                }
+            .button1 
+                {background-color: #04AA6D;} /* Green */
+        
+            .button2 
+                {background-color: midnightblue;} /* midnight Blue */
+        
+            .button3 
+                {background-color: #f44336;} /* Red */ 
+        
+            .button4 
+                {background-color: #e7e7e7; color: black;} /* Gray */ 
+        
+            .button5 
+                {background-color: #555555;} /* Black */
+</style>
+</head>
+<body style = background-color:lightgrey>
+<button class="button button2">HTML 5 Library</button>
+<button class="button button2">CSS Library</button>
+<button class="button button2">JavaScript Library</button>
+<button class="button button2">Java Library</button>
+<button class="button button2" for ="cars">Cars</button>
+<!--<label for="cars">Choose a car:</label>-->
+
+<select name="cars" id="cars">
+  <option value="volvo" >Volvo</option>
+  <option value="saab" style = background-color:black>Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<label for="cars">Choose a car:</label>
+</body>
