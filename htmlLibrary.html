@@ -113,6 +113,57 @@
 <link rel="icon" type = "image/png" href="https://angrealis.github.io/LA.Designs/favicon.png">;
 </head>
 <body style = background-color:#101517>
+      <table border="1" width ="50%">
+          <thead>
+            <tr>
+                <th>Column 1</th> <!--Table Header(TH)-->
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <tr> <!-- Table Row number 1 -->
+               <td>Cell #1</td>  <!-- cell 1 -->
+               <td>Cell #2</td><!-- cell 2-->
+               <td>Cell#3</td>  
+            </tr>
+            
+            <tr><!-- Table Row number 2 -->
+                <!--<td colspan = "2">Cell#4</td> cell 1 within row 1 colspan merges two rows-->
+                <td>Cell#4</td>
+                <td>Cell#5</td>
+                <td>Cell#6</td>
+            </tr>
+            
+            <tr><!-- Table Row number 3 -->
+                <!--<td rowspan="2">Cell#7</td>-->
+                <td>Cell#7</td>
+                <td>Cell#8</td>
+                <td>Cell#9</td>
+            </tr>    
+            
+            <tr><!-- Table Row number 2 -->
+              <td>Cell#10</td>
+              <td>Cell#11</td>
+              <td>Cell#12</td>
+            </tr>
+         </tbody>
+        
+         <tfoot>
+            <tr>
+                <th>Footer 1</th> <!--Table Header(TH)-->
+                <th>Footer 2</th>
+                <th>Footer 3</th>
+            </tr>
+        </tfoot>
+        
+      </table>
+
+
+
+
+    
     <a href="https://angrealis.github.io/LA.Designs/htmlLibrary.html"><button class="button button2">HTML 5 Library</button></a>
     <button class="button button2">CSS Library</button>
     <button class="button button2">JavaScript Library</button>
