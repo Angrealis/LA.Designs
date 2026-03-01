@@ -18,6 +18,13 @@
         background-color:#101517;
         color: #D3D3D3;
     }
+
+    .table-layout{
+      font-size:20px;
+      td:nth-child(odd) { background-color: #002231; };
+      td:nth-child(even) { background-color: #00131c; };
+      list-style-position: inside;
+    }
     /* Add a black background color to the top navigation */
     .topnav {
       background-color: #01263a;
@@ -47,7 +54,7 @@
     }
     
     /* end of Navigation classes*/
-    
+    /* ------------------------Button Functions-------------------------- */
      .button 
                       {
                         border: none;
@@ -113,37 +120,160 @@
             
                 .button5 
                     {background-color: #555555;} /* Black */
+/* ------------------------Hyper link colours for visiting, hovering and active etc-------------------------- */
+                a:link {
+                        color: rgb(4, 139, 192);
+                        background-color: transparent;
+                        text-decoration: none;
+                      }
+
+                      a:visited {
+                        color: rgb(216, 228, 42);
+                        background-color: transparent;
+                        text-decoration: none;
+                      }
+
+                      a:hover {
+                        color: rgb(177, 243, 255);
+                        background-color: transparent;
+                        text-decoration: underline;
+                      }
+
+                      a:active {
+                        color: rgb(255, 252, 57);
+                        background-color: transparent;
+                        text-decoration: underline;
+                      }
+
+                .backgroundcode {
+                  background-image: url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest?cb=20240802142023');
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                /* background-size: cover;*/
+                  background-size: 100% 100%;
+                }
     </style>
 <link rel="icon" type = "image/png" href="https://angrealis.github.io/LA.Designs/favicon.png">;
 </head>
 <body class = "base-text">
-      <table border="1" width ="50%">
+      <table class = table-layout border:1px solid black width ="100%">
           <thead>
             <tr>
                 <th>Column 1</th> <!--Table Header(TH)-->
-                <th>Column 2</th>
-                <th>Column 3</th>
+                <th>Table Layout Elements</th>
+                <th>Text Elements</th>
             </tr>
           </thead>
         
           <tbody>
             <tr> <!-- Table Row number 1 -->
                <td>Cell #1</td>  <!-- cell 1 -->
-               <td>Cell #2</td><!-- cell 2-->
-               <td>Cell#3</td>  
+              <td>
+              <!--<td class = "backgroundcode"> use this code for iron man background-->
+              <li>Change colour of every other row - tr:nth-child(even) { background-color: #D6EEEE; }</li>
+              <li>Change colour of every other coloumn - td:nth-child(even) { background-color: #D6EEEE; }</li><br>
+              <li>&lt;th colspan="2">Name&lt;th></li>
+              <li>&lt;th rowspan="2">Name&lt;th></li><br>
+              <li>&lt;colgroup></li>
+              <li>&lt;col span="2" style="background-color:red"></li>
+              <li>&lt;col style="background-color:yellow"></li>
+              <li>&lt;/colgroup></li><br>
+
+
+
+              <li>padding: 15px;</li>
+              <li>padding-top:10px;</li>
+              <li>padding-bottom:10px;</li>
+              <li>padding-left:10px;</li>
+              <li>padding-right:10px;</li>
+              <li>border-color: #96D4D4;</li>
+              <li>border-style: dotted;</li>
+              <li>border-spacing: 30px;</li>
+              <li>dotted</li>
+              <li>dashed</li>
+              <li>solid</li>
+              <li>double</li>
+              <li>groove</li>
+              <li>ridge</li>
+              <li>inset</li>
+              <li>outset</li>
+              <li>none</li>
+              <li>hidden</li>
+              <li>Ordered Numbered List &lt;ol> &lt;/ol></li>
+              <li>Bulletpoint List &lt;li> &lt;/li></li>   
+
+
+               </td><!-- cell 2-->
+               <td>
+                <li>&lt;b> - Bold text </li>
+                <li>&lt;strong> - Important text, text readable</li>
+                <li>&lt;i> - Italic text</li>
+                <li>&lt;em> - Emphasized text</li>
+                <li>&lt;mark> - Marked text</li>
+                <li>&lt;small> - Smaller text</li>
+                <li>&lt;del> - Deleted text</li>
+                <li>&lt;ins> - Inserted text</li>
+                <li>&lt;sub> - Subscript text</li>
+                <li>&lt;sup> - Superscript text</li>
+                <li>&lt;p> - Defines a paragraph</li>
+                <li>&lt;hr> - Defines a thematic change in the content</li>
+                <li>&lt;br> - Inserts a single line break</li>
+                <li>&lt;pre> - Defines a pre-formatted text</li>
+                <li>&lt;abbr> - Defines an abbreviation or acronym</li>
+                <li>&lt;address> - Defines contact information for the author/owner of a document</li>
+                <li>&lt;bdo> - Defines text direction</li>
+                <li>&lt;blockquote> - Defines a section that is quoted from another source</li>
+                <li>&lt;cite> - Defines the title of a work</li>
+                <li>&lt;q> Defines a short inline quotation</li>
+
+
+
+               </td>  
             </tr>
             
             <tr><!-- Table Row number 2 -->
                 <!--<td colspan = "2">Cell#4</td> cell 1 within row 1 colspan merges two rows-->
-                <td>Cell#4</td>
-                <td>Cell#5</td>
+                <td><h4>Relative, Absolute links and image manip.</h3></td>
+                <td>User Interaction</td>
                 <td>Cell#6</td>
             </tr>
             
             <tr><!-- Table Row number 3 -->
                 <!--<td rowspan="2">Cell#7</td>-->
-                <td>Cell#7</td>
-                <td>Cell#8</td>
+                <td>
+                <li>Absolute link- &lt;a href="https://www.google.com/">Google</a></li><br>
+                <li>Relative link - &lt;a href="html_images.asp">HTML Images</a></li><br>
+                <li>Html Link targets, _self, _blank, _parent, _top</li><br>
+                <li>Example - &lt;a href="https://www.google.com/"target="_blank">Google</a></li><br>
+                <li>Add a mouse over title - title ="Text to show"</li><br>
+                <li>Example- &lt;a href="https://www.google.com/"title = "Text to show">Google</a></li><br>
+                <li>Link to Email - &lt;a href="mailto:someone@example.com">Send email</a></li><br>
+                <li>Use id feature to create a bookmark - &lt;h1 id="bookmark1"> Bookmark&lt;/h1></li><br>
+                <li>&lt;a href="#bookmark1">jump to bookmark1 &lt;/a></li><br>
+                <h5>Add an Image</h5>
+                <li>&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"></li><br>
+                <li>src - source, srcset = resizeable image, alt- alternate image if source not found, style - size by pixals</li><br>
+                <li>&lt;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;""></li><br>  
+                <li>&lt;style="float:right;width:42px;height:42px;">- place the image to left or right of text</li><br>
+                <li>Image types .apng/ .gif/ .ico/ .cur/ .jpg/ .jpeg/ .pjpeg/ .pjp/ .png/ .svg</li><br><br>
+                <h5>Image Mapping</h5><br>
+                <li>&lt;img></li><br>
+                <li>&lt;map></li><br>
+                <li>&lt;area></li><br>
+                <li>&lt;picture></li><br>
+
+
+                <li>map name="workmap">&lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"></li><br>
+                <li>use map links to a picure like a function</li><br>
+                <li>Shape - rect, circle, poly, default</li>
+
+                </td>
+                
+                <td>
+                <li>&lt;button onclick="document.location='default.asp'">HTML Tutorial</button><br></li>
+                <a href="https://www.google.com/"target="_blank">Google</a>
+                </td>
+                
                 <td>Cell#9</td>
             </tr>    
             
@@ -183,8 +313,3 @@
     </select>
     <label for="cars">Choose a car:</label>-->
 </body>
-
-
-
-
-
