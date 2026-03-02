@@ -1,6 +1,26 @@
+    .base-text{
+        background-color:#101517;
+        color: #D3D3D3;
+             }
 
+    .table-layout{
+      font-size:20px;
+      td:nth-child(odd) { background-color: #002231; };
+     /* td:nth-child(even) { background-color: #00131c; };*/
+     td:nth-child(even) { background-color: rgba(0,19,28,.0); };
+      list-style-position: inside;
+      width: 100%;
+      border: 1px solid rgb(255, 255, 255);
+      /*border-radius 10px*/
+            }
+
+
+    th, td {
+      padding:15px
+    }
     /* Add a black background color to the top navigation */
     .topnav {
+      /*background-color: #01263a;*/
       background-color:#044061;
       overflow: hidden;
     }
@@ -26,9 +46,9 @@
       background-color: #1073bb;
       color: white;
     }
-    
+
     /* end of Navigation classes*/
-    
+    /* ------------------------Button Functions-------------------------- */
      .button 
                       {
                         border: none;
@@ -44,7 +64,7 @@
                         box-shadow: 0 9px #999;
                       }
                 .button:hover 
-                      {background-color: #0099ff}
+                      {background-color: #0099ff;}
                 
                 .button:active 
                       {
@@ -94,5 +114,35 @@
             
                 .button5 
                     {background-color: #555555;} /* Black */
+/* ------------------------Hyper link colours for visiting, hovering and active etc-------------------------- */
+                a:link {
+                        color: rgb(0, 255, 170);
+                        background-color: transparent;
+                        text-decoration: none;
+                      }
 
-     
+                      a:visited {
+                        color: rgb(4, 139, 192);
+                        background-color: transparent;
+                        text-decoration: none;
+                      }
+
+                      a:hover {
+                        color: rgb(177, 243, 255);
+                        background-color: transparent;
+                        text-decoration: underline;
+                      }
+
+                      a:active {
+                        color: rgb(42, 228, 88);
+                        background-color: transparent;
+                        text-decoration: underline;
+                      }
+
+                .backgroundcode {
+                  background-image: url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest?cb=20240802142023');
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                /* background-size: cover;*/
+                  background-size: 100% 100%;
+                }
