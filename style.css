@@ -150,5 +150,6 @@
                 .darkMode {
                         body {
                           background-color: red;
+                            td:nth-child(odd) { background-color: red; }
                         }
                 }
