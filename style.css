@@ -146,3 +146,9 @@
                 /* background-size: cover;*/
                   background-size: 100% 100%;
                 }
+/* ---------------------------------------Testing----------------------------------------------*/
+                .darkMode {
+                        body {
+                          background-color: lightblue;
+                        }
+                }
