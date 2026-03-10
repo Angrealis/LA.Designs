@@ -1,0 +1,148 @@
+    .base-text{
+        background-color: white;
+        color: #D3D3D3;
+             }
+
+    .table-layout{
+      font-size:20px;
+      td:nth-child(odd) { background-color: red; };
+     /* td:nth-child(even) { background-color: #00131c; };*/
+     td:nth-child(even) { background-color: blue; };
+      list-style-position: inside;
+      width: 100%;
+      border: 1px solid rgb(255, 255, 255);
+      /*border-radius 10px*/
+            }
+
+
+    th, td {
+      padding:15px
+    }
+    /* Add a black background color to the top navigation */
+    .topnav {
+      /*background-color: #01263a;*/
+      background-color:#044061;
+      overflow: hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #1073bb;
+      color: white;
+    }
+
+    /* end of Navigation classes*/
+    /* ------------------------Button Functions-------------------------- */
+     .button 
+                      {
+                        border: none;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        cursor: pointer;
+                        border-radius: 15px;
+                        box-shadow: 0 9px #999;
+                      }
+                .button:hover 
+                      {background-color: #0099ff;}
+                
+                .button:active 
+                      {
+                        background-color: #0099ff;
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
+                      }
+                .button span 
+                      {
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative; 
+                        transition: 0.5s;
+                      }
+                
+                .button span:after 
+                      {
+                        content: '\00bb';
+                        position: absolute;
+                        opacity: 0;
+                        top: 0;
+                        right: -20px;
+                        transition: 0.5s;
+                      }
+                
+                .button:hover span 
+                    {
+                      padding-right: 25px;
+                    }
+                
+                .button:hover span:after 
+                    {
+                      opacity: 1;
+                      right: 0;
+                    }
+                .button1 
+                    {background-color: #04AA6D;} /* Green */
+            
+                .button2 
+                    {background-color: #00131c;} /* midnight Blue */
+            
+                .button3 
+                    {background-color: #f44336;} /* Red */ 
+            
+                .button4 
+                    {background-color: #e7e7e7; color: black;} /* Gray */ 
+            
+                .button5 
+                    {background-color: #555555;} /* Black */
+/* ------------------------Hyper link colours for visiting, hovering and active etc-------------------------- */
+                a:link {
+                        color: rgb(0, 255, 170);
+                        background-color: transparent;
+                        text-decoration: none;
+                      }
+
+                      a:visited {
+                        color: rgb(4, 139, 192);
+                        background-color: transparent;
+                        text-decoration: none;
+                      }
+
+                      a:hover {
+                        color: rgb(177, 243, 255);
+                        background-color: transparent;
+                        text-decoration: underline;
+                      }
+
+                      a:active {
+                        color: rgb(42, 228, 88);
+                        background-color: transparent;
+                        text-decoration: underline;
+                      }
+
+                .backgroundcode {
+                  background-image: url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest?cb=20240802142023');
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                /* background-size: cover;*/
+                  background-size: 100% 100%;
+                }
