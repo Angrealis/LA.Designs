@@ -143,7 +143,7 @@
                 /*  background-image: url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest?cb=20240802142023');*/
                     background-image: url('https://angrealis.github.io/LA.Designs/LADesignlogo.png');
                   background-repeat: no-repeat;
-                  background-attachment: fixed;
+                  /*background-attachment: fixed;*/
                   background-size: auto;
                   background-size: 100% 100%;
                 }
