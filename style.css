@@ -1,18 +1,7 @@
-    .logoDiv{
-        background-image: url ('https://upload.wikimedia.org/wikipedia/commons/c/c9/F-16_June_2008.jpg');
-                  background-repeat: no-repeat;
-                  background-attachment: fixed;
-                /* background-size: cover;*/
-                  background-size: 100% 100%;
-             }    
-
     .base-text{
         background-color:#101517;
         color: #D3D3D3;
              }
-
-
-
 
     .table-layout{
       font-size:20px;
@@ -151,12 +140,21 @@
                       }
 
                 .backgroundcode {
-                  background-image: url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest?cb=20240802142023');
+                /*  background-image: url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9d/Iron_Man_Infobox.jpg/revision/latest?cb=20240802142023');*/
+                    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c9/F-16_June_2008.jpg');
                   background-repeat: no-repeat;
                   background-attachment: fixed;
                 /* background-size: cover;*/
                   background-size: 100% 100%;
                 }
+                .logoDiv{
+                    background-image: url ('https://upload.wikimedia.org/wikipedia/commons/c/c9/F-16_June_2008.jpg');
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                /* background-size: cover;*/
+                  background-size: 100% 100%;
+             }    
+
 /* ---------------------------------------Testing----------------------------------------------*/
                 .darkMode {
                         body {
