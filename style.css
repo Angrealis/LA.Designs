@@ -1,6 +1,6 @@
     .logoDiv{
    /*       background-image: color url ('https://github.com/Angrealis/LA.Designs/blob/main/LADesignlogo.png');*/
-        background-image: color url ('https://upload.wikimedia.org/wikipedia/commons/c/c9/F-16_June_2008.jpg');
+        background-image: url ('https://upload.wikimedia.org/wikipedia/commons/c/c9/F-16_June_2008.jpg');
            background-size:contain;
    height:200px;width:1200px;
        /*   height: 85px; /* You must set a specified height */
