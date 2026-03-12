@@ -1,3 +1,12 @@
+    .logoDiv{
+          background-image: https://angrealis.github.io/LA.Designs/LADesignlogo.png
+          background-color: #cccccc; /* Used if the image is unavailable */
+          height: 500px; /* You must set a specified height */
+          background-position: left; /* Center the image to left */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+                    }    
+
     .base-text{
         background-color:#101517;
         color: #D3D3D3;
