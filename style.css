@@ -144,7 +144,7 @@
                     background-image: url('https://angrealis.github.io/LA.Designs/LADesignlogo.png');
                   background-repeat: no-repeat;
                   background-attachment: fixed;
-                  background-size: cover;
+                  background-size: auto;
                   background-size: 100% 100%;
                 }
                 .logoDiv{
