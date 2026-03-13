@@ -37,13 +37,13 @@
     
     /* Change the color of links on hover */
     .topnav a:hover {
-      background-color: #ddd;
+      background-color: #3EB489;
       color: black;
     }
     
     /* Add a color to the active/current link */
     .topnav a.active {
-      background-color: #1073bb;
+      background-color: #84fff3;
       color: white;
     }
 
@@ -68,7 +68,7 @@
                 
                 .button:active 
                       {
-                        background-color: blue;
+                        background-color: light grey;/*when holding click down i.e. click on button what colour does it change too*/
                         box-shadow: 0 5px #666;
                         transform: translateY(4px);
                       }
