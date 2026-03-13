@@ -156,6 +156,9 @@
              }    
             .divTopMenu {
                 background-color: #01181E;
+                
+            }
+            .divTopBorder{
                 margin-left: 25%; border: 1px solid rgb(255, 255, 255);
             }
 /* ---------------------------------------Testing----------------------------------------------*/
