@@ -154,7 +154,9 @@
                 /* background-size: cover;*/
                   background-size: 100% 100%;
              }    
-
+            .divTopMenu {
+                background-color: #EBEBEB;
+            }
 /* ---------------------------------------Testing----------------------------------------------*/
                 .darkMode {
                         body {
