@@ -37,7 +37,7 @@
     
     /* Change the color of links on hover */
     .topnav a:hover {
-      background-color: #3EB489;
+      background-color: #84fff3; /*colour of square around button when hovering */
       color: black;
     }
     
