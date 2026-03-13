@@ -52,7 +52,7 @@
      .button 
                       {
                         border: none;
-                        color: red;
+                        color: white; /*button font colour*/
                         padding: 15px 32px;
                         text-align: center;
                         text-decoration: none;
@@ -64,7 +64,7 @@
                         box-shadow: 0 9px #999;
                       }
                 .button:hover 
-                      {background-color: #40E0D0;}
+                      {background-color: red;}
                 
                 .button:active 
                       {
